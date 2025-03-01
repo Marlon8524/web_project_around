@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="social network" />
+    <meta name="keywords" content="HTML, CSS, Traveling, Fotografía, Redes Sociales" />
+    <meta name="author" content="Marlon Gil" />
+    <title>Around world</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+      </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img class="header__logo" src="./images/header.png" alt="logo" />
+      </header>
+
+<main class="content">
+
+  <section class="profile">
+          <div class="profile__content">
+            <div class="profile__info">
+              <div class="profile__avatar">
+                <img src="./images/photo-profile.png" alt="avatar"
+                  class="profile__avatar-image"/>
+              </div>
+              <div class="profile__details">
+                <h1 class="profile__name">Jacques Cousteau</h1>
+                <p class="profile__description">Explorador</p>
+              </div>
+
+              <div class="profile__info-button-info"></div>
+            </div>
+          </div>
+            <div class="profile__ad-button-add"></div>
+      </section>
+
+
+  <section class="gallery">
+
+          <div class="gallery__card">
+          <img class="gallery__card-image"
+          src="./images/Valle_de_Yosemite.jpg" alt="Valle de Yosemite"/>
+
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Valle de Yosemite</p>
+              <img class="gallery__card-like" src="./images/like.svg" alt="Corazon de like"/>
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img
+              class="gallery__card-image"
+              src="./images/Lago_louise.png"
+              alt="Lago Louise"
+            />
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Lago louise</p>
+              <img class="gallery__card-like" src="./images/like.svg"  alt="Corazon de like" />
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img
+              class="gallery__card-image"
+              src="./images/Montañas-Calvas.png"
+              alt="Montañas Calvas"
+            />
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Montañas Calvas</p>
+              <img class="gallery__card-like"
+                src="./images/like.svg"
+                alt="Corazon de like">
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img class="gallery__card-image"
+              src="./images/Latemar.png"
+              alt="Latemar"
+            />
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Latemar</p>
+              <img          class="gallery__card-like"
+                src="./images/like.svg"
+                alt="Corazon de like"
+              />
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img
+              class="gallery__card-image"
+              src="./images/vanois-National.png"
+              alt="Vanois National..."
+            />
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Vanois National...</p>
+              <img
+                class="gallery__card-like"
+                src="./images/like.svg"
+                alt="Corazon de like"
+              />
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img
+              class="gallery__card-image"
+              src="./images/braies.png"
+              alt="Lago di Braes"
+            />
+            <div class="gallery__card-text">
+              <p class="gallery__card-name">Lago di Braes</p>
+              <img class="gallery__card-like"
+                src="./images/like.svg"
+                alt="Corazon de like" />
+            </div>
+          </div>
+        </section>
+
+
+        <section class="popup">
+
+          <div class="popup__container">
+            <div class="popup__button-close"></div>
+
+            <h2 class="popup__form-title">Editar Perfil</h2>
+            <form class="popup__form">
+              <input  class="popup__form-name"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+              />
+              <input
+                class="popup__form-occupation"
+                type="text"
+                id="occupation"
+                name="occupation"
+                placeholder="Acerca de mi"
+              />
+              <button class="popup__form-button">Guardar</button>
+            </form>
+
+          </div>
+        </section>
+
+</main>
+
+
+      <footer class="footer">
+        <p class="footer__copyright">© 2025 Around The U.S.</p>
+      </footer>
+    </div>
+    <script  src="./scripts/index.js"></script>
+  </body>
+</html>

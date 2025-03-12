@@ -25,15 +25,7 @@ max-width: 880px;
   align-items: center;
   justify-content: center;
 }
-/*.profile__icon {
-  position: absolute;
-  background-image: url("edit-button.png");
-  width: 24px;
-  height: 24px;
-  display: none;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+
 .profile__conteiner:hover .profile__icon {
   display: block;
 }

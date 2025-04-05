@@ -1,4 +1,4 @@
-.gallery {
+.gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -9,37 +9,21 @@
   padding: 0;
 }
 
-.gallery__card {
-  width: 100%;
+.card{
+  position: relative;
+  width: 280px;
   height: 361px;
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border-radius: 10px;
-
+   border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
 }
-.gallery__card-image {
-  max-width: 282px;
+
+.card__text{
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.gallery__card-name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  text-align: left;
+  padding: 25px 15px 31px 21px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
-  gap: 5px;
-
- }
-
-.gallery__card-text {
+  justify-content: space-between;
   color: black;
   font-family: Inter;
   font-size: 24px;
@@ -49,20 +33,66 @@
   display: flex;
   justify-content: space-evenly;
   gap: 5px;
-
-
 }
 
-.gallery__card-like {
 
-  justify-content: flex-end;
-  border: none;
-  width: 21px;
-  height: 19px;
-  margin-top: 30px;
+.card__name{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: black;
+  margin: 0;
+  padding: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.card__delete-icon {
+  background-image: url(../images/delatebutton.svg);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.card__image{
+  max-width: 282px;
+  height: 282px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.gallery__card-like  {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/like.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: transparent;
+  cursor: pointer;
+  margin: 0;
 }
 
+.card__like-icon_active{
+  background-image: url(../images/like-black.svg);
+  cursor: pointer;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 @media screen and (max-width: 1080px) {
   .gallery {

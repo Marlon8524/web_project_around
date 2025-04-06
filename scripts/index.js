@@ -11,6 +11,9 @@ const buttonSubmit = document.querySelector(".popup__form-button");
 const popupCard = document.querySelector("#popup-cards");
 const cardForm = document.querySelector("#form-cards");
 
+const cardTitleInput = document.querySelector("#input-card-title"); // Referencia al título de la tarjeta
+const cardLinkInput = document.querySelector("#input-card-link"); // Referencia al enlace de la tarjeta
+
 
 const addCardButton = document.querySelector(".profile__ad-button-add");
 const popupCardCloseButton = popupCard.querySelector(".popup__button-close");
@@ -95,7 +98,7 @@ function createCard (name, link){
     //la imagen del popup src = link
     popupImage.querySelector('.popup__image').src = link;
     popupImage.querySelector('.popup__image').alt = name;
-    popupImage.querySelector('.popup__for-title').textContent = name;
+    popupImage.querySelector('.popup__image-title').textContent = name;
     //la imagen del popup alt = name
     //el texto del popup alt = name
 
@@ -139,3 +142,6 @@ initialCards.forEach(item => {
 popupImage.querySelector('.popup__button-close').addEventListener('click', () => {
   popupImage.classList.remove('popup_opened');
 });
+// Agregar el evento de envío para el formulario de tarjetas
+cardForm.addEventListener("submit", handleCardFormSubmit);
+
